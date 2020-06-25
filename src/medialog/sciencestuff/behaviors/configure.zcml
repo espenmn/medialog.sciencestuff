@@ -10,6 +10,16 @@
     <!-- -*- extra stuff goes here -*- -->
 
     <plone:behavior
+        name="medialog.sciencestuff.math_behavior"
+        title="MathBehavior"
+        description="Renders LATEX etc math in browser"
+        provides=".math_behavior.IMathBehavior"
+        factory=".math_behavior.MathBehavior"
+        marker=".math_behavior.IMathBehaviorMarker"
+        />
+
+
+    <plone:behavior
         name="medialog.sciencestuff.highlight_behavior"
         title="HighlightBehavior"
         description="Highlights code"
