@@ -7,6 +7,16 @@
   -*- extra stuff goes here -*-
 
   <browser:viewlet
+     name="math-viewlet"
+     for="plone.app.contenttypes.interfaces.IDocument"
+     manager="plone.app.layout.viewlets.interfaces.IAboveContentTitle"
+     layer="medialog.sciencestuff.interfaces.IMedialogSciencestuffLayer"
+     class=".math_viewlet.MathViewlet"
+     template="math-viewlet.pt"
+     permission="zope2.View"
+     />
+
+  <browser:viewlet
      name="highlight-viewlet"
      for="plone.app.contenttypes.interfaces.IDocument"
      manager="plone.app.layout.viewlets.interfaces.IAboveContentTitle"
