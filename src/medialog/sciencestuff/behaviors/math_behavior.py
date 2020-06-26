@@ -19,11 +19,11 @@ class IMathBehavior(model.Schema):
     """
     """
 
-    project = schema.TextLine(
-        title=_(u'Project'),
-        description=_(u'Give in a project name'),
-        required=False,
-    )
+    #project = schema.TextLine(
+    #    title=_(u'Project'),
+    #    description=_(u'Give in a project name'),
+    #    required=False,
+    #)
 
 
 @implementer(IMathBehavior)
@@ -32,12 +32,12 @@ class MathBehavior(object):
     def __init__(self, context):
         self.context = context
 
-    @property
-    def project(self):
-        if hasattr(self.context, 'project'):
-            return self.context.project
-        return None
+    #@property
+    #def project(self):
+    #    if hasattr(self.context, 'project'):
+    #        return self.context.project
+    #    return None
 
-    @project.setter
-    def project(self, value):
-        self.context.project = value
+    #@project.setter
+    #def project(self, value):
+    #    self.context.project = value

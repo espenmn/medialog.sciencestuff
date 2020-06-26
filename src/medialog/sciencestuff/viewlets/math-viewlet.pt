@@ -1,3 +1,16 @@
-<div class="days_to_conf">
-    ${view/message}
-</div>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<!--script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script-->
+<!--script type="text/javascript"  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTM"></script-->
+<!--script type="text/javascript"  src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script-->
+<script type="text/javascript"  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML-full"></script>
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+tex2jax: {inlineMath: [ ['$','$'], ['\\(','\\)'], ['[latex]','[/latex]']  ],
+         displayMath: [ ['$$','$$'], ['\\[', '\\]'] ],
+        processEscapes: true,
+          balanceBraces:false,
+}
+});
+</script>

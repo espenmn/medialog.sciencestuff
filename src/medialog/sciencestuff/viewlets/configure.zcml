@@ -8,7 +8,7 @@
 
   <browser:viewlet
      name="math-viewlet"
-     for="plone.app.contenttypes.interfaces.IDocument"
+     for="medialog.sciencestuff.behaviors.math_behavior.IMathBehaviorMarker"
      manager="plone.app.layout.viewlets.interfaces.IAboveContentTitle"
      layer="medialog.sciencestuff.interfaces.IMedialogSciencestuffLayer"
      class=".math_viewlet.MathViewlet"
@@ -18,7 +18,7 @@
 
   <browser:viewlet
      name="highlight-viewlet"
-     for="plone.app.contenttypes.interfaces.IDocument"
+     for="medialog.sciencestuff.behaviors.highlight_behavior.IHighlightBehaviorMarker"
      manager="plone.app.layout.viewlets.interfaces.IAboveContentTitle"
      layer="medialog.sciencestuff.interfaces.IMedialogSciencestuffLayer"
      class=".highlight_viewlet.HighlightViewlet"
